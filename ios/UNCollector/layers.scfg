@@ -1,0 +1,680 @@
+{
+"stores": [
+{
+"store_type": "gpkg",
+"name": "WhiteHorse tiles",
+"default_layers": [],
+"style": [
+{
+"id": "default",
+"paint": {
+"fill-color": "#ff0000",
+"fill-opacity": 0.5,
+"line-color": "#ff0000",
+"line-opacity": 1,
+"icon-color": "#ff0000"
+}
+}
+],
+"id": "82f410ec-a809-4578-8448-71d11d306e5d",
+"team_id": 1,
+"options": null,
+"uri": "https://s3.amazonaws.com/test.spacon/whitehorse.gpkg",
+"version": "1"
+},
+{
+"store_type": "geojson",
+"name": "Earthquakes",
+"default_layers": [],
+"style": [
+{
+"id": "default",
+"paint": {
+"fill-color": "#ff0000",
+"fill-opacity": 0.5,
+"line-color": "#ff0000",
+"line-opacity": 1,
+"icon-color": "#01ff0f"
+}
+}
+],
+"id": "e4703b4b-e9bc-416c-9ec7-1488e0b25be5",
+"team_id": 1,
+"options": null,
+"uri": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
+"version": "1"
+}
+],
+"forms": [
+{
+"id": 92,
+"form_key": "un_risk",
+"form_label": "UN Risk",
+"version": 11,
+"team_id": 1,
+"fields": [
+{
+"constraints": {},
+"field_key": "active",
+"type": "boolean",
+"is_required": false,
+"field_label": "Active",
+"id": 392,
+"position": 0
+},
+{
+"constraints": {},
+"field_key": "active_from",
+"type": "date",
+"is_required": false,
+"field_label": "Active From",
+"id": 393,
+"position": 2
+},
+{
+"constraints": {},
+"field_key": "active_to",
+"type": "date",
+"is_required": false,
+"field_label": "Active To",
+"id": 394,
+"position": 1
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": "3"
+},
+"field_key": "country_co",
+"type": "string",
+"is_required": false,
+"field_label": "Country Co",
+"id": 395,
+"position": 4
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "global_id",
+"type": "string",
+"is_required": false,
+"field_label": "Global ID",
+"id": 396,
+"position": 9
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "label",
+"type": "string",
+"is_required": false,
+"field_label": "Label",
+"id": 397,
+"position": 5
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": "10"
+},
+"field_key": "mission_co",
+"type": "string",
+"is_required": false,
+"field_label": "Mission Co",
+"id": 398,
+"position": 6
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "namelong",
+"type": "string",
+"is_required": false,
+"field_label": "NameLong",
+"id": 399,
+"position": 7
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "name",
+"type": "string",
+"is_required": false,
+"field_label": "Name",
+"id": 400,
+"position": 8
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "remarks",
+"type": "string",
+"is_required": false,
+"field_label": "Remarks",
+"id": 401,
+"position": 10
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "shape_star",
+"type": "number",
+"is_required": false,
+"field_label": "SHAPE_STAr",
+"id": 402,
+"position": 11
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "shape_stle",
+"type": "number",
+"is_required": false,
+"field_label": "SHAPE_STLe",
+"id": 403,
+"position": 12
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "source_dat",
+"type": "string",
+"is_required": false,
+"field_label": "Source_Dat",
+"id": 404,
+"position": 13
+},
+{
+"constraints": {},
+"field_key": "source",
+"type": "date",
+"is_required": false,
+"field_label": "Source",
+"id": 405,
+"position": 14
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "subtype",
+"type": "number",
+"is_required": false,
+"field_label": "Subtype",
+"id": 406,
+"position": 15
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "type",
+"type": "string",
+"is_required": false,
+"field_label": "Type",
+"id": 407,
+"position": 16
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "confidence",
+"type": "number",
+"is_required": false,
+"field_label": "Confidence",
+"id": 408,
+"position": 3
+}
+],
+"metadata": {
+"count": null,
+"lastActivity": null
+}
+},
+{
+"id": 93,
+"form_key": "un_operations",
+"form_label": "UN Operations",
+"version": 11,
+"team_id": 1,
+"fields": [
+{
+"constraints": {},
+"field_key": "active",
+"type": "boolean",
+"is_required": false,
+"field_label": "Active",
+"id": 392,
+"position": 0
+},
+{
+"constraints": {},
+"field_key": "active_from",
+"type": "date",
+"is_required": false,
+"field_label": "Active From",
+"id": 393,
+"position": 2
+},
+{
+"constraints": {},
+"field_key": "active_to",
+"type": "date",
+"is_required": false,
+"field_label": "Active To",
+"id": 394,
+"position": 1
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": "3"
+},
+"field_key": "country_co",
+"type": "string",
+"is_required": false,
+"field_label": "Country Co",
+"id": 395,
+"position": 4
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "global_id",
+"type": "string",
+"is_required": false,
+"field_label": "Global ID",
+"id": 396,
+"position": 9
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "label",
+"type": "string",
+"is_required": false,
+"field_label": "Label",
+"id": 397,
+"position": 5
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": "10"
+},
+"field_key": "mission_co",
+"type": "string",
+"is_required": false,
+"field_label": "Mission Co",
+"id": 398,
+"position": 6
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "namelong",
+"type": "string",
+"is_required": false,
+"field_label": "NameLong",
+"id": 399,
+"position": 7
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "name",
+"type": "string",
+"is_required": false,
+"field_label": "Name",
+"id": 400,
+"position": 8
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "remarks",
+"type": "string",
+"is_required": false,
+"field_label": "Remarks",
+"id": 401,
+"position": 10
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "shape_star",
+"type": "number",
+"is_required": false,
+"field_label": "SHAPE_STAr",
+"id": 402,
+"position": 11
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "shape_stle",
+"type": "number",
+"is_required": false,
+"field_label": "SHAPE_STLe",
+"id": 403,
+"position": 12
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "source_dat",
+"type": "string",
+"is_required": false,
+"field_label": "Source_Dat",
+"id": 404,
+"position": 13
+},
+{
+"constraints": {},
+"field_key": "source",
+"type": "date",
+"is_required": false,
+"field_label": "Source",
+"id": 405,
+"position": 14
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "subtype",
+"type": "number",
+"is_required": false,
+"field_label": "Subtype",
+"id": 406,
+"position": 15
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "type",
+"type": "string",
+"is_required": false,
+"field_label": "Type",
+"id": 407,
+"position": 16
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "confidence",
+"type": "number",
+"is_required": false,
+"field_label": "Confidence",
+"id": 408,
+"position": 3
+}
+],
+"metadata": {
+"count": null,
+"lastActivity": null
+}
+},
+{
+"id": 92,
+"form_key": "un_presence",
+"form_label": "UN Presence",
+"version": 11,
+"team_id": 1,
+"fields": [
+{
+"constraints": {},
+"field_key": "active",
+"type": "boolean",
+"is_required": false,
+"field_label": "Active",
+"id": 392,
+"position": 0
+},
+{
+"constraints": {},
+"field_key": "active_from",
+"type": "date",
+"is_required": false,
+"field_label": "Active From",
+"id": 393,
+"position": 2
+},
+{
+"constraints": {},
+"field_key": "active_to",
+"type": "date",
+"is_required": false,
+"field_label": "Active To",
+"id": 394,
+"position": 1
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": "3"
+},
+"field_key": "country_co",
+"type": "string",
+"is_required": false,
+"field_label": "Country Co",
+"id": 395,
+"position": 4
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "global_id",
+"type": "string",
+"is_required": false,
+"field_label": "Global ID",
+"id": 396,
+"position": 9
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "label",
+"type": "string",
+"is_required": false,
+"field_label": "Label",
+"id": 397,
+"position": 5
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": "10"
+},
+"field_key": "mission_co",
+"type": "string",
+"is_required": false,
+"field_label": "Mission Co",
+"id": 398,
+"position": 6
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "namelong",
+"type": "string",
+"is_required": false,
+"field_label": "NameLong",
+"id": 399,
+"position": 7
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "name",
+"type": "string",
+"is_required": false,
+"field_label": "Name",
+"id": 400,
+"position": 8
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "remarks",
+"type": "string",
+"is_required": false,
+"field_label": "Remarks",
+"id": 401,
+"position": 10
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "shape_star",
+"type": "number",
+"is_required": false,
+"field_label": "SHAPE_STAr",
+"id": 402,
+"position": 11
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "shape_stle",
+"type": "number",
+"is_required": false,
+"field_label": "SHAPE_STLe",
+"id": 403,
+"position": 12
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "source_dat",
+"type": "string",
+"is_required": false,
+"field_label": "Source_Dat",
+"id": 404,
+"position": 13
+},
+{
+"constraints": {},
+"field_key": "source",
+"type": "date",
+"is_required": false,
+"field_label": "Source",
+"id": 405,
+"position": 14
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "subtype",
+"type": "number",
+"is_required": false,
+"field_label": "Subtype",
+"id": 406,
+"position": 15
+},
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "type",
+"type": "string",
+"is_required": false,
+"field_label": "Type",
+"id": 407,
+"position": 16
+},
+{
+"constraints": {
+"integer": false
+},
+"field_key": "confidence",
+"type": "number",
+"is_required": false,
+"field_label": "Confidence",
+"id": 408,
+"position": 3
+}
+],
+"metadata": {
+"count": null,
+"lastActivity": null
+}
+},
+      {
+        "id": 96,
+        "form_key": "test",
+        "form_label": "test",
+        "version": 6,
+        "team_id": 1,
+        "fields": [
+          {
+            "constraints": {
+              "pattern": ""
+            },
+            "field_key": "test",
+            "type": "string",
+            "is_required": false,
+            "field_label": "test",
+            "id": 444,
+            "position": 0
+          },
+        {
+          "constraints": {
+            "minimum": "0",
+            "maximum": "50",
+            "initial_value": "0"
+          },
+          "field_key": "counter",
+          "type": "counter",
+          "is_required": true,
+          "field_label": "counter",
+          "id": 447,
+          "position": 1
+},
+{
+"constraints": {
+
+},
+"field_key": "photo_test",
+"type": "photo",
+"is_required": true,
+"field_label": "Photo Test",
+"id": 448,
+"position": 2
+}
+        ],
+        "metadata": {
+          "count": null,
+          "lastActivity": null
+        }
+      }
+]
+}

@@ -1,50 +1,5 @@
 {
-"stores": [
-{
-"store_type": "gpkg",
-"name": "WhiteHorse tiles",
-"default_layers": [],
-"style": [
-{
-"id": "default",
-"paint": {
-"fill-color": "#ff0000",
-"fill-opacity": 0.5,
-"line-color": "#ff0000",
-"line-opacity": 1,
-"icon-color": "#ff0000"
-}
-}
-],
-"id": "82f410ec-a809-4578-8448-71d11d306e5d",
-"team_id": 1,
-"options": null,
-"uri": "https://s3.amazonaws.com/test.spacon/whitehorse.gpkg",
-"version": "1"
-},
-{
-"store_type": "geojson",
-"name": "Earthquakes",
-"default_layers": [],
-"style": [
-{
-"id": "default",
-"paint": {
-"fill-color": "#ff0000",
-"fill-opacity": 0.5,
-"line-color": "#ff0000",
-"line-opacity": 1,
-"icon-color": "#01ff0f"
-}
-}
-],
-"id": "e4703b4b-e9bc-416c-9ec7-1488e0b25be5",
-"team_id": 1,
-"options": null,
-"uri": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
-"version": "1"
-}
-],
+"stores": [],
 "forms": [
 {
 "id": 92,

@@ -1,50 +1,5 @@
 {
-"stores": [
-{
-"store_type": "gpkg",
-"name": "WhiteHorse tiles",
-"default_layers": [],
-"style": [
-{
-"id": "default",
-"paint": {
-"fill-color": "#ff0000",
-"fill-opacity": 0.5,
-"line-color": "#ff0000",
-"line-opacity": 1,
-"icon-color": "#ff0000"
-}
-}
-],
-"id": "82f410ec-a809-4578-8448-71d11d306e5d",
-"team_id": 1,
-"options": null,
-"uri": "https://s3.amazonaws.com/test.spacon/whitehorse.gpkg",
-"version": "1"
-},
-{
-"store_type": "geojson",
-"name": "Earthquakes",
-"default_layers": [],
-"style": [
-{
-"id": "default",
-"paint": {
-"fill-color": "#ff0000",
-"fill-opacity": 0.5,
-"line-color": "#ff0000",
-"line-opacity": 1,
-"icon-color": "#01ff0f"
-}
-}
-],
-"id": "e4703b4b-e9bc-416c-9ec7-1488e0b25be5",
-"team_id": 1,
-"options": null,
-"uri": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
-"version": "1"
-}
-],
+"stores": [],
 "forms": [
 {
 "id": 92,
@@ -105,7 +60,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "25"
 },
 "field_key": "label",
 "type": "string",
@@ -128,7 +84,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "100"
 },
 "field_key": "namelong",
 "type": "string",
@@ -139,7 +96,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "10"
 },
 "field_key": "name",
 "type": "string",
@@ -150,7 +108,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "100"
 },
 "field_key": "remarks",
 "type": "string",
@@ -193,7 +152,9 @@
 "position": 13
 },
 {
-"constraints": {},
+"constraints": {
+"maximum_length": 50
+},
 "field_key": "source",
 "type": "date",
 "is_required": false,
@@ -203,7 +164,8 @@
 },
 {
 "constraints": {
-"integer": false
+"integer": true,
+"maximum": 99999
 },
 "field_key": "subtype",
 "type": "number",
@@ -214,7 +176,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": 5
 },
 "field_key": "type",
 "type": "string",
@@ -225,7 +188,7 @@
 },
 {
 "constraints": {
-"integer": false
+"integer": true
 },
 "field_key": "confidence",
 "type": "number",
@@ -233,6 +196,42 @@
 "field_label": "Confidence",
 "id": 408,
 "position": 3
+},
+{
+"constraints": {},
+"field_key": "created_us",
+"type": "string",
+"is_required": false,
+"field_label": "created_us",
+"id": 409,
+"position": 17
+},
+{
+"constraints": {},
+"field_key": "created_da",
+"type": "date",
+"is_required": false,
+"field_label": "created_da",
+"id": 410,
+"position": 18
+},
+{
+"constraints": {},
+"field_key": "last_edite",
+"type": "string",
+"is_required": false,
+"field_label": "last_edite",
+"id": 411,
+"position": 19
+},
+{
+"constraints": {},
+"field_key": "last_edi_1",
+"type": "date",
+"is_required": false,
+"field_label": "last_edi_1",
+"id": 412,
+"position": 20
 }
 ],
 "metadata": {
@@ -241,7 +240,7 @@
 }
 },
 {
-"id": 93,
+"id": 94,
 "form_key": "un_operations",
 "form_label": "UN Operations",
 "version": 11,
@@ -299,7 +298,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "25"
 },
 "field_key": "label",
 "type": "string",
@@ -322,7 +322,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "100"
 },
 "field_key": "namelong",
 "type": "string",
@@ -333,7 +334,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "10"
 },
 "field_key": "name",
 "type": "string",
@@ -344,7 +346,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "100"
 },
 "field_key": "remarks",
 "type": "string",
@@ -387,7 +390,9 @@
 "position": 13
 },
 {
-"constraints": {},
+"constraints": {
+"maximum_length": 50
+},
 "field_key": "source",
 "type": "date",
 "is_required": false,
@@ -397,7 +402,8 @@
 },
 {
 "constraints": {
-"integer": false
+"integer": true,
+"maximum": 99999
 },
 "field_key": "subtype",
 "type": "number",
@@ -408,7 +414,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": 5
 },
 "field_key": "type",
 "type": "string",
@@ -419,7 +426,7 @@
 },
 {
 "constraints": {
-"integer": false
+"integer": true
 },
 "field_key": "confidence",
 "type": "number",
@@ -427,6 +434,54 @@
 "field_label": "Confidence",
 "id": 408,
 "position": 3
+},
+{
+"constraints": {},
+"field_key": "created_us",
+"type": "string",
+"is_required": false,
+"field_label": "created_us",
+"id": 409,
+"position": 17
+},
+{
+"constraints": {},
+"field_key": "created_da",
+"type": "date",
+"is_required": false,
+"field_label": "created_da",
+"id": 410,
+"position": 18
+},
+{
+"constraints": {},
+"field_key": "last_edite",
+"type": "string",
+"is_required": false,
+"field_label": "last_edite",
+"id": 411,
+"position": 19
+},
+{
+"constraints": {},
+"field_key": "last_edi_1",
+"type": "date",
+"is_required": false,
+"field_label": "last_edi_1",
+"id": 412,
+"position": 20
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": 3
+},
+"field_key": "used_by",
+"type": "string",
+"is_required": false,
+"field_label": "Used By",
+"id": 413,
+"position": 21
 }
 ],
 "metadata": {
@@ -435,7 +490,7 @@
 }
 },
 {
-"id": 92,
+"id": 95,
 "form_key": "un_presence",
 "form_label": "UN Presence",
 "version": 11,
@@ -493,7 +548,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "25"
 },
 "field_key": "label",
 "type": "string",
@@ -516,7 +572,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "100"
 },
 "field_key": "namelong",
 "type": "string",
@@ -527,7 +584,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "100"
 },
 "field_key": "name",
 "type": "string",
@@ -538,7 +596,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": "100"
 },
 "field_key": "remarks",
 "type": "string",
@@ -581,7 +640,9 @@
 "position": 13
 },
 {
-"constraints": {},
+"constraints": {
+"maximum_length": 50
+},
 "field_key": "source",
 "type": "date",
 "is_required": false,
@@ -591,7 +652,8 @@
 },
 {
 "constraints": {
-"integer": false
+"integer": true,
+"maximum": 99999
 },
 "field_key": "subtype",
 "type": "number",
@@ -602,7 +664,8 @@
 },
 {
 "constraints": {
-"pattern": ""
+"pattern": "",
+"maximum_length": 5
 },
 "field_key": "type",
 "type": "string",
@@ -613,7 +676,7 @@
 },
 {
 "constraints": {
-"integer": false
+"integer": true
 },
 "field_key": "confidence",
 "type": "number",
@@ -621,6 +684,90 @@
 "field_label": "Confidence",
 "id": 408,
 "position": 3
+},
+{
+"constraints": {},
+"field_key": "created_us",
+"type": "string",
+"is_required": false,
+"field_label": "created_us",
+"id": 409,
+"position": 17
+},
+{
+"constraints": {},
+"field_key": "created_da",
+"type": "date",
+"is_required": false,
+"field_label": "created_da",
+"id": 410,
+"position": 18
+},
+{
+"constraints": {},
+"field_key": "last_edite",
+"type": "string",
+"is_required": false,
+"field_label": "last_edite",
+"id": 411,
+"position": 19
+},
+{
+"constraints": {},
+"field_key": "last_edi_1",
+"type": "date",
+"is_required": false,
+"field_label": "last_edi_1",
+"id": 412,
+"position": 20
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": 3
+},
+"field_key": "level",
+"type": "string",
+"is_required": false,
+"field_label": "Level_",
+"id": 413,
+"position": 21
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": 50
+},
+"field_key": "parent",
+"type": "string",
+"is_required": false,
+"field_label": "Parent",
+"id": 414,
+"position": 22
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": 50
+},
+"field_key": "labellong",
+"type": "string",
+"is_required": false,
+"field_label": "Label Long",
+"id": 415,
+"position": 23
+},
+{
+"constraints": {
+"pattern": "",
+"maximum_length": 3
+},
+"field_key": "used_by",
+"type": "string",
+"is_required": false,
+"field_label": "Used By",
+"id": 416,
+"position": 24
 }
 ],
 "metadata": {
@@ -628,53 +775,64 @@
 "lastActivity": null
 }
 },
-      {
-        "id": 96,
-        "form_key": "test",
-        "form_label": "test",
-        "version": 6,
-        "team_id": 1,
-        "fields": [
-          {
-            "constraints": {
-              "pattern": ""
-            },
-            "field_key": "test",
-            "type": "string",
-            "is_required": false,
-            "field_label": "test",
-            "id": 444,
-            "position": 0
-          },
-        {
-          "constraints": {
-            "minimum": "0",
-            "maximum": "50",
-            "initial_value": "0"
-          },
-          "field_key": "counter",
-          "type": "counter",
-          "is_required": true,
-          "field_label": "counter",
-          "id": 447,
-          "position": 1
+{
+"id": 96,
+"form_key": "test",
+"form_label": "test",
+"version": 6,
+"team_id": 1,
+"fields": [
+{
+"constraints": {
+"pattern": ""
+},
+"field_key": "test",
+"type": "string",
+"is_required": false,
+"field_label": "test",
+"id": 444,
+"position": 0
 },
 {
 "constraints": {
-
+"minimum": "0",
+"maximum": "50",
+"initial_value": "0"
 },
+"field_key": "counter",
+"type": "counter",
+"is_required": true,
+"field_label": "counter",
+"id": 447,
+"position": 1
+},
+{
+"constraints": {},
 "field_key": "photo_test",
 "type": "photo",
 "is_required": true,
 "field_label": "Photo Test",
 "id": 448,
 "position": 2
+},
+{
+"constraints": {
+"initial_value": 50,
+"maximum": 100,
+"minimum": 0
+},
+"field_key": "slider_test",
+"type": "slider",
+"is_required": true,
+"field_label": "Slider Test",
+"id": 449,
+"position": 3
 }
-        ],
-        "metadata": {
-          "count": null,
-          "lastActivity": null
-        }
-      }
+],
+"metadata": {
+"count": null,
+"lastActivity": null
+}
+}
 ]
 }

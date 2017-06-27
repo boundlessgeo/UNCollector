@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/frowe/projects/UNCollector/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.3/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/frowe/projects/UNCollector/android/app/build/intermediates/res/merged/debug/xml/provider_paths.xml",
+        "source": "/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/UNCollector/react-native-image-picker/unspecified/res/xml/provider_paths.xml"
+    }
+]

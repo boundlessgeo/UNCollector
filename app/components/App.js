@@ -1,10 +1,11 @@
 import React from 'react';
+import { StatusBar, View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import { blue } from '../styles';
+import { blue, darkBlue } from '../styles';
 import FormList from './FormList';
 import Form from './Form';
 
-const App = StackNavigator(
+const AppStack = StackNavigator(
   {
     Home: { screen: FormList },
     Form: { screen: Form },
@@ -12,6 +13,7 @@ const App = StackNavigator(
   {
     navigationOptions: {
       headerStyle: {
+        elevation: 6,
         backgroundColor: blue,
         shadowColor: 'black',
         shadowOffset: { width: 0, height: 0 },
@@ -24,6 +26,13 @@ const App = StackNavigator(
       headerTintColor: 'white',
     },
   }
+);
+
+const App = () => (
+  <View style={{ flex: 1 }}>
+    <StatusBar backgroundColor={darkBlue} barStyle="light-content" />
+    <AppStack />
+  </View>
 );
 
 export default App;

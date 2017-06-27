@@ -18,10 +18,10 @@
   "dependencies": {
     "react": "16.0.0-alpha.6",
     "react-native": "^0.44.0",
-    "react-native-image-picker": "0.26.3",
     "react-native-button": "2.0.0",
-    "react-native-slider": "0.10.0",
+    "react-native-image-picker": "0.26.3",
     "react-native-spatialconnect": "0.11.2",
+    "react-native-vector-icons": "4.2.0",
     "react-navigation": "1.0.0-beta.11",
     "spatialconnect-form-schema": "2.3.5",
     "tcomb-form-native": "0.6.9",

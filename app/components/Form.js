@@ -1,13 +1,29 @@
 import React from 'react';
+import { Platform, StyleSheet, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import * as sc from 'react-native-spatialconnect';
 import scformschema from 'spatialconnect-form-schema/native';
 
+let self;
 class Form extends React.Component {
   static navigationOptions = ({ navigation }) => ({
     title: navigation.state.params.form.form_label,
+    headerRight: (
+      <TouchableOpacity onPress={() => self.scform.onSubmit()}>
+        <Icon
+          name={
+            Platform.OS === 'ios' ? 'ios-checkmark-circle-outline' : 'md-checkmark-circle-outline'
+          }
+          size={25}
+          color={'white'}
+          style={styles.iconStyle}
+        />
+      </TouchableOpacity>
+    ),
   });
   constructor(props) {
     super(props);
+    self = this;
     this.state = {
       submitting: false,
     };
@@ -58,5 +74,11 @@ class Form extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  iconStyle: {
+    paddingRight: 16,
+  },
+});
 
 export default Form;

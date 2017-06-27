@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpatialConnect</string>
+    <string name="default_web_client_id" translatable="false"/>
+    <string name="firebase_database_url" translatable="false"/>
+    <string name="gcm_defaultSenderId" translatable="false"/>
+    <string name="google_api_key" translatable="false"/>
+    <string name="google_crash_reporting_api_key" translatable="false"/>
+    <string name="google_storage_bucket" translatable="false"/>
+</resources>

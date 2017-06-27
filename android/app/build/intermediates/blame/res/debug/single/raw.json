@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/frowe/projects/UNCollector/android/app/build/intermediates/res/merged/debug/raw/webviewjavascriptbridge.js",
+        "source": "/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.boundlessgeo.spatialconnect/spatialconnect/0.11.1/res/raw/webviewjavascriptbridge.js"
+    },
+    {
+        "merged": "/Users/frowe/projects/UNCollector/android/app/build/intermediates/res/merged/debug/raw/ca.crt",
+        "source": "/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.boundlessgeo.spatialconnect/spatialconnect/0.11.1/res/raw/ca.crt"
+    },
+    {
+        "merged": "/Users/frowe/projects/UNCollector/android/app/build/intermediates/res/merged/debug/raw/layers.scfg",
+        "source": "/Users/frowe/projects/UNCollector/android/app/src/main/res/raw/layers.scfg"
+    }
+]

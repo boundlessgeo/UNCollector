@@ -1,5 +1,11 @@
 apply plugin: "com.android.application"
 
+repositories {
+  maven { url 'https://maven.fabric.io/public' }
+  maven {
+        url "https://repo.eclipse.org/content/repositories/paho-releases/"
+    }
+}
 import com.android.build.OutputFile
 
 /**
@@ -66,6 +72,11 @@ import com.android.build.OutputFile
  */
 
 apply from: "../../node_modules/react-native/react.gradle"
+project.ext.vectoricons = [
+    iconFontNames: [ 'Ionicons.ttf'] // Name of the font files you want to copy
+]
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -83,8 +94,8 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.uncollector"
@@ -95,6 +106,7 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
+        multiDexEnabled true
     }
     splits {
         abi {
@@ -122,6 +134,22 @@ android {
                         versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
             }
         }
+    }
+    packagingOptions {
+      exclude 'META-INF/LICENSE'
+      exclude 'META-INF/NOTICE'
+      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.xml'
+      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.properties'
+      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.xml'
+      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.properties'
+      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.xml'
+      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.properties'
+      pickFirst 'META-INF/maven/commons-io/commons-io/pom.xml'
+      pickFirst 'META-INF/maven/commons-io/commons-io/pom.properties'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
     }
 }
 

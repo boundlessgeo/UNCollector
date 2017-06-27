@@ -627,7 +627,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CnfrzA/4cNFmdbKiS5ggB7QtTyg=
+		uhwm1A2DqaS2GuR0SCCPCL52Nq4=
+		</data>
+		<key>Ionicons.ttf</key>
+		<data>
+		D3lWcE/mG0nEHqGiIFEkD3AKK0Q=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -655,7 +659,7 @@
 		</data>
 		<key>layers.scfg</key>
 		<data>
-		9ienr9dII+zXBm7l57TwpsBU0UY=
+		AEDRYu0gY20/5z/Y+Gy9yWMi7No=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -2356,6 +2360,17 @@
 			kCPJVCvU3s5mQn307zwo3T7YjfOHd/vpBZwDCsTy0ms=
 			</data>
 		</dict>
+		<key>Ionicons.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			D3lWcE/mG0nEHqGiIFEkD3AKK0Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			u0dnmwuuuEgbf1HGitM65aUmc2y1CxcXzGD/a2X5CKM=
+			</data>
+		</dict>
 		<key>PlugIns/UNCollectorTests.xctest.dSYM/Contents/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -2415,11 +2430,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9ienr9dII+zXBm7l57TwpsBU0UY=
+			AEDRYu0gY20/5z/Y+Gy9yWMi7No=
 			</data>
 			<key>hash2</key>
 			<data>
-			2t/ju2T2g0R1my8n33r+AOE9qplM5HA+Pj6iSqDdDlg=
+			XUWN0iSfdmz7RhYlUIKsOZaL6wilE45EdvYVR++2Anc=
 			</data>
 		</dict>
 	</dict>

@@ -1,7 +1,38 @@
 import React from 'react';
-import { Dimensions, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  Dimensions,
+  FlatList,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  TouchableNativeFeedback,
+  View,
+} from 'react-native';
 import * as sc from 'react-native-spatialconnect';
-import { blue, orange, gray } from '../styles';
+import Icon from 'react-native-vector-icons/Ionicons';
+import { blue, orange, gray, darkGray } from '../styles';
+
+const FormCell = props => {
+  return (
+    <View>
+      <TouchableOpacity onPress={props.onSelect}>
+        <View style={styles.cellRow}>
+          <Text style={styles.cellName} numberOfLines={2}>
+            {props.form.form_label}
+          </Text>
+          <Icon
+            name={Platform.OS === 'ios' ? 'ios-arrow-forward' : 'md-arrow-forward'}
+            size={20}
+            color={'#BDBDBD'}
+            style={styles.iconStyle}
+          />
+        </View>
+      </TouchableOpacity>
+    </View>
+  );
+};
 
 class FormList extends React.Component {
   static navigationOptions = {
@@ -26,24 +57,19 @@ class FormList extends React.Component {
     });
   }
 
+  keyExtractor = item => item.id;
+
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <ScrollView style={styles.container}>
-        <View style={styles.list}>
-          {this.state.forms.map((form, idx) => (
-            <TouchableOpacity
-              onPress={() => navigate('Form', { form })}
-              style={styles.listItem}
-              key={`${form.form_key}.${idx}`}
-            >
-              <View>
-                <Text style={styles.listItemText}>{form.form_label}</Text>
-              </View>
-            </TouchableOpacity>
-          ))}
-        </View>
-      </ScrollView>
+      <FlatList
+        data={this.state.forms}
+        renderItem={({ item }) => (
+          <FormCell form={item} onSelect={() => navigate('Form', { form: item })} />
+        )}
+        keyExtractor={this.keyExtractor}
+        style={styles.list}
+      />
     );
   }
 }
@@ -51,7 +77,7 @@ class FormList extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: gray,
+    backgroundColor: '#FAFAFA',
     padding: 20,
   },
   textHeader: {
@@ -60,26 +86,26 @@ const styles = StyleSheet.create({
   },
   list: {
     flex: 1,
-    marginRight: -20,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    paddingTop: 8,
+    paddingBottom: 8,
+    backgroundColor: '#FAFAFA',
   },
-  listItem: {
-    height: 100,
-    width: (Dimensions.get('window').width - 81) / 3,
-    backgroundColor: 'white',
-    borderRadius: 2,
-    shadowColor: 'black',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 2,
-    padding: 10,
-    marginRight: 20,
-    marginBottom: 20,
-  },
-  listItemText: {
-    color: orange,
+  cellName: {
     fontSize: 16,
+    marginBottom: 2,
+    color: 'black',
+  },
+  cellRow: {
+    height: 48,
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    paddingLeft: 16,
+    borderBottomColor: darkGray,
+    borderBottomWidth: 1,
+  },
+  iconStyle: {
+    paddingRight: 16,
   },
 });
 

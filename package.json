@@ -22,7 +22,7 @@
     "react-native-spatialconnect": "0.11.3",
     "react-native-vector-icons": "4.2.0",
     "react-navigation": "1.0.0-beta.11",
-    "spatialconnect-form-schema": "2.3.5",
+    "spatialconnect-form-schema": "3.0.0-beta.1",
     "tcomb-form-native": "0.6.9",
     "tcomb-json-schema": "0.3.1"
   }

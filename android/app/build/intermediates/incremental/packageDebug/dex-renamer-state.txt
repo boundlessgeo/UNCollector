@@ -1,4 +1,4 @@
-#Tue Jun 27 16:24:45 EDT 2017
+#Wed Jun 28 13:32:13 EDT 2017
 base.0=/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.1=classes.dex
 renamed.0=classes2.dex

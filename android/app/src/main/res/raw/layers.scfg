@@ -810,7 +810,7 @@
           "constraints": {},
           "field_key": "photo_test",
           "type": "photo",
-          "is_required": true,
+          "is_required": false,
           "field_label": "Photo Test",
           "id": 448,
           "position": 2

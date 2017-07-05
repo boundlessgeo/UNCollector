@@ -18,9 +18,8 @@
   "dependencies": {
     "react": "16.0.0-alpha.6",
     "react-native": "^0.44.0",
-    "react-native-button": "2.0.0",
     "react-native-image-picker": "0.26.3",
-    "react-native-spatialconnect": "0.11.2",
+    "react-native-spatialconnect": "0.11.3",
     "react-native-vector-icons": "4.2.0",
     "react-navigation": "1.0.0-beta.11",
     "spatialconnect-form-schema": "2.3.5",

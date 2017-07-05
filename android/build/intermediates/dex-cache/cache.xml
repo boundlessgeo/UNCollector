@@ -2,535 +2,148 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/frowe/.m2/repository/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.1.0/org.eclipse.paho.client.mqttv3-1.1.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/47ab600d840c62aebe010346a6c47a92a6020cba/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="baae48ec0ee93bf76788a582c64b71f70d36a45c">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/org.eclipse.paho.client.mqttv3-1.1.0_ad41a170d0575edbd360af6b64bc5fca526edb19.jar" />
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_388f49c70d8d71ddfd1148484699a7b06741c293/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.0_ada81512cd49a32c41e5a17fc0bbf8ff0d7ad2f8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.0_5a32d6619200d79c577d36a0179cad5f028ae231.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.3/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/b14ac180349d14d4e8cf67a7423f1d40f9eb7cba/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="af9665a44df26b4098e24c934c1109507845ef5e">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.3_f5a9e24e5141cda23c37d14feb331563996a75c8.jar" />
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_909351bf88498acbb021c80bc05480790248879d/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/cdd48dad71cf7a579e9324d5dbf9cf885a9d95c0/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_cef7aaebf1c9ddee66f4d1053c2f907f54f14417.jar" />
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e2fa36b4917ed610fd981ceddd32160bc2b2cff2/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/.m2/repository/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/cc69a5db1bef6a77445d805fa9ea3842882ecdec/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="6d325aa7c921661d84577c0a93d82da4df9fa4c8">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/protobuf-java-3.0.0_9917835d80b65dace6ce6988fe6d0ee03d6efa48.jar" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_23a0fbd484fd4ba37d318a0c95233a2dc87a24d6/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.6/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="d79c575e1d97b0298746a4c032a0c1dc201c2f82">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-10.2.6_22b36de873cc6f9500fd9251d22279890f3d33ce.jar" />
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a78e2d075e3d6b69b2b834ca6fdc62714a7853fd/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.6/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/84353c15d9a73c514fdd0c1e259c558e061dba57/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.6_01be3d29af820966134dc08a716b85b062bf9519.jar" />
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_07c7422cc61026b6225e899ecd0642ce9bdbe784/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/6758a7c93c3e334df765bae6578df359f7f7e9b8/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.0_f870b0275b7e0d9c00f146464274fab4a35507ee.jar" />
+        sha1="a8dd1bca806fb15a144e8bd8e5db994c0963cda9">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_36dde3b0aa6a304a1a482cdfa71548412c073982/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.6/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/6758a7c93c3e334df765bae6578df359f7f7e9b8/output/jars/libs/boundlessSchema-0.9.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="9ff5114aff3bfb387577ba92a11408dcf0441c24">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-10.2.6_8c92e5fc40f14fe54341b64fc98fb0b67840c6f9.jar" />
+        sha1="e9abfc6c6cc3a03d6c18478988968c5e0f474c82">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/boundlessSchema-0.9_8168ef7903efa2d20cf034fa46812c8d3096ddca/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/d7e3cd91199c3a86e718029fe25feb85abdf5056/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_39285be2ea289fcdc64608ddf09cc4403c833722.jar" />
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d7024b7b7cb54dd008ba089c1ed693ca5d645122/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.4.2/ceb72830d95c512b4b300a38f29febc85bdf6e4b/jackson-core-2.4.2.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/25c50175ed935a76fc8cddb83cb2a48fd89f9057/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ceb72830d95c512b4b300a38f29febc85bdf6e4b">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/jackson-core-2.4.2_52d526920b3438942e9d1535920aa3e6d509ed65.jar" />
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8826d99e1eb5ee577ee8c89df8f3d864a814a0aa/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.boundlessgeo.spatialconnect/spatialconnect/0.11.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/e4218fc52c15ef27d30783ae2584748451509b41/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="eee309ef2cd137b6951c48d0bc0e5de336c1cb73">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.boundlessgeo.spatialconnect-spatialconnect-0.11.1_4f0a6fe3aa31b36a3fc8b14a4e412a530fbb7326.jar" />
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6001073a791bc73e9465392bb618815d01d4594a/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_b3ebacea732758da3f1c97c25113851c1cbbff9f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.boundlessgeo.spatialconnect/spatialconnect/0.11.1/jars/libs/boundlessSchema-0.8.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d97011eb0034478cae075682a1544b37196bc094">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/boundlessSchema-0.8_5d88eef328775e3f31b64c121672f64d064da594.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.4.2/8e31266a272ad25ac4c089734d93e8d811652c1f/jackson-databind-2.4.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8e31266a272ad25ac4c089734d93e8d811652c1f">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/jackson-databind-2.4.2_5938d2d4db46c0d686aa5a4952ba577cf680837b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="63994437f62bc861bc20c605d12962f7246116d1">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_586d75aa8385a499e69b2b0b7d8c6d2e8216d16e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.0_829465470529ec6b4ba8152ea10a943c83fd7d49.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.0_cdd68ab5432d48b66db63f52c0f3f60b56e31193.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.6/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8f83a631abfdb790591a720e0cfb5f41329831c3">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-10.2.6_83c8e28a7389b6babf9ad2a35c438a0d07fdc1ba.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.6_8527cd0ea6421d0e4368ed63161589fc6b19c783.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.0_887670effd431c1801f43d3f66c94ed157285969.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.3/jars/libs/infer-annotations-1.5.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/b14ac180349d14d4e8cf67a7423f1d40f9eb7cba/output/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_289615c64d3d1c4a51844ddcb57582d5aeccee11.jar" />
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/infer-annotations-1.5_32069cc00600a889bcac2cbdeb80f6e715d043a7/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/1a1118e9b338ca927571f2164bff2aeb1fb3198c/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.0_b532bc2000ec313d484c9266b68181f518bc2d64.jar" />
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9cb5ec5417ccc818510cc670dc5c7f0f7d81aab4/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_023ac9d8e60133d318d4d8a11941f43c6051d02d.jar" />
+        sha1="cd46a85870cf0615cc29bc0308189bfee128eb40">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e94e631e853fa01949a8292e2af4a9523f6d278e/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.bedatadriven/jackson-datatype-jts/2.2/74b9b7917c07eee3140e40d3c2286d09ec9477c1/jackson-datatype-jts-2.2.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="74b9b7917c07eee3140e40d3c2286d09ec9477c1">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/jackson-datatype-jts-2.2_7a9931b26dd4bb7ed0cc59f1860d3a9e2c16432e.jar" />
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_16bbb92a201c7d58ed6ff160a716443619e534d1/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/frowe/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/frowe/.android/build-cache/17baf568e33115437996a4f22d0d1aa2b3c8d841/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.1.0_5503e4f6deb0c3b321fc880c4e312317c1cf96dc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_2db1b44ab975288924d0c22f85b0d49d524937c0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_d46e96febe89001d93b0d5f82c08c7418e4c4866.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/io.reactivex-rxandroid-1.2.1_a6f8f6c157d5bfa8e51417d69cd40f9c30f84629.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.0_c8f5cee1aea8843d489cf1ea1a664b34234e086d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.0_e9100950c1f14edd1cdebc44e45b79f3bc1792ce.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/commons-io-2.4_e95bdb9030f5d51804c0e2f4cdffb016df7f1ee6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_66939e6e6d5a3b05eb7375ddb70b51c93de7be77.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_9fed1ab8b68b0eb29e05b5b90533acd0b4f27d14.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.github.rtoshiro.securesharedpreferences/securesharedpreferences/1.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="59efde85ad44be612b510b501b9249d3e7a1fd8f">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.github.rtoshiro.securesharedpreferences-securesharedpreferences-1.2.0_2441b27f913cd34f1c5db48b7522d3b57b05c14d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.conceal/conceal/1.1.2/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="67127c9b29c164cd2c17726630cde41ce614d811">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.facebook.conceal-conceal-1.1.2_bfcb7d2f997bdab36745c25390070a7eb629dbdc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_dd22dafbe67b2971c7de9d9ff13204e5222dbece.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.6/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.6_26a4e559e3d216490b0b0bbec2a93ca51b005245.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.auth0/java-jwt/2.2.1/820daba165fd57835f384b12b4b69b233ec3a03a/java-jwt-2.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="820daba165fd57835f384b12b4b69b233ec3a03a">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/java-jwt-2.2.1_9e57e9b7279b08768a91e0b4bd66fa5293b88ead.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.android.support-multidex-1.0.1_be9e443055e7bc30bfb4bfd532a1e888773e3603.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.2/81d61b7f33ebeab314e07de0cc596f8e858d97/slf4j-api-1.7.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0081d61b7f33ebeab314e07de0cc596f8e858d97">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/slf4j-api-1.7.2_bb42b0ca94cd7b4e4c815d28286d778e14775cae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.6/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c6924cbba8248329a8c58ead6a380efe7eee76e">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.2.6_a712709ee8bc40fcf50d8c41967236fbbee5901b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.boundlessgeo.spatialconnect/react-native-spatialconnect/0.10.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="56a7586d715bf077696f824561ee0935a7501122">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.boundlessgeo.spatialconnect-react-native-spatialconnect-0.10.0_fdfaada3ac497e12b676f00880f6b38302e21830.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_98ccb1afa44126fde7bfa3f19803925cd9b72d32.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.m2/repository/com/vividsolutions/jts/1.13/jts-1.13.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3ccfb9b60f04d71add996a666ceb8902904fd805">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/jts-1.13_62b918b35ce4899a6b11b24f7ad2e19d5430a9aa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/org.eclipse.paho.android.service/1.1.0/1945d9504415955d865ac805f60bf85366aeaffb/org.eclipse.paho.android.service-1.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1945d9504415955d865ac805f60bf85366aeaffb">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/org.eclipse.paho.android.service-1.1.0_c86838940402df960f088205b9c77fd2d0725e47.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.github.pwittchen/reactivenetwork/0.5.2/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a9fc739f576b756aaef57df6ea2dc860bbf8008c">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.github.pwittchen-reactivenetwork-0.5.2_aaf13183306178b6dcb8b60dcf43f04b1671e98d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_1f832e42e8e7fc31ef180c394c20ce643cc9cf6c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.1.9/e4362e62f1ba92e360b197d6d7ffae67e5ecae9a/rxjava-1.1.9.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e4362e62f1ba92e360b197d6d7ffae67e5ecae9a">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/rxjava-1.1.9_bc3a99072b0517a43980f0254f7227f5bf1b9d1b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/io.jeo/jeo/0.6/5e8744c95188f7ff2cd083cd94109ba54dad7933/jeo-0.6.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5e8744c95188f7ff2cd083cd94109ba54dad7933">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/jeo-0.6_45e672379ab7aed61477804c86724f4a9e08f682.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_fe899c54807601c8cae1c72dc27b8f7b3aa738ce.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.6/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="da832806828ba407284c0c4b1d87b8f9ed9f2520">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-10.2.6_89e2de1beb3888009f59ba91f67e675b7ed77549.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_20d125d75e2ec799f367b8c1cc4f3a932cacafaf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_56ff36d363717bf3848e6b45ccfcaeda0df268c6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/UNCollector/react-native-image-picker/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="185debb713f05e6ae262b4167d7645dce64ca4cb">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/UNCollector-react-native-image-picker-unspecified_cb74b5993f53ecd92fd62ebf47bbb34bb6e86f02.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/projects/UNCollector/android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.6/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0a534044236cf81b002604643d23e7ca56bd1ee0">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-10.2.6_24c5141b59b5acdf5e1945a267f8c5a9a95b359e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.4.0/d6a66c7a5f01cf500377bd669507a08cfeba882a/jackson-annotations-2.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d6a66c7a5f01cf500377bd669507a08cfeba882a">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/jackson-annotations-2.4.0_916e496e4239792c3562ce77aeccb3db5844e951.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/frowe/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_86ddb7d7c5a656aa7175b58faa4f10cc3e55361c.jar" />
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/frowe/projects/UNCollector/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5f1dbb30a161b2da4091efb105af94e30dc07486/classes.dex" />
     </item>
 
 </items>

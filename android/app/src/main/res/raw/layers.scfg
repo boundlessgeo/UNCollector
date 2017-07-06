@@ -776,57 +776,102 @@
       }
     },
     {
-      "id": 96,
-      "form_key": "test",
-      "form_label": "test",
-      "version": 6,
+      "id": 10,
+      "form_key": "allfields",
+      "form_label": "All-fields",
+      "version": 7,
       "team_id": 1,
       "fields": [
         {
           "constraints": {
             "pattern": ""
           },
-          "field_key": "test",
+          "field_key": "text_field",
           "type": "string",
           "is_required": false,
-          "field_label": "test",
-          "id": 444,
+          "field_label": "Text Field",
+          "id": 33,
           "position": 0
         },
         {
           "constraints": {
-            "minimum": "0",
-            "maximum": "50",
-            "initial_value": "0"
+            "integer": false
           },
-          "field_key": "counter",
-          "type": "counter",
-          "is_required": true,
-          "field_label": "counter",
-          "id": 447,
+          "field_key": "number_field",
+          "type": "number",
+          "is_required": false,
+          "field_label": "number field aksladjfk lksdj flkasjf dlasjdf lkasjfd laksjdf aksdjf lkas",
+          "id": 34,
           "position": 1
         },
         {
           "constraints": {},
-          "field_key": "photo_test",
-          "type": "photo",
+          "field_key": "checkbox",
+          "type": "boolean",
           "is_required": false,
-          "field_label": "Photo Test",
-          "id": 448,
+          "field_label": "Checkbox",
+          "id": 35,
           "position": 2
         },
         {
-          "constraints": {
-            "initial_value": 50,
-            "maximum": 100,
-            "minimum": 0
-          },
-          "field_key": "slider_test",
-          "type": "slider",
-          "is_required": true,
-          "field_label": "Slider Test",
-          "id": 449,
+          "constraints": {},
+          "field_key": "date",
+          "type": "date",
+          "is_required": false,
+          "field_label": "Date",
+          "id": 36,
           "position": 3
+        },
+        {
+          "constraints": {
+            "options": [
+              "option 1",
+              "option 2"
+            ]
+          },
+          "field_key": "dropdown",
+          "type": "select",
+          "is_required": false,
+          "field_label": "dropdown",
+          "id": 37,
+          "position": 4
+        },
+        {
+          "constraints": {
+            "minimum": "0",
+            "maximum": "100",
+            "initial_value": "0"
+          },
+          "field_key": "counter",
+          "type": "counter",
+          "is_required": false,
+          "field_label": "counter",
+          "id": 38,
+          "position": 5
+        },
+        {
+          "constraints": {
+            "minimum": "0",
+            "maximum": "100",
+            "initial_value": "50"
+          },
+          "field_key": "slider",
+          "type": "slider",
+          "is_required": false,
+          "field_label": "slider",
+          "id": 39,
+          "position": 6
+        },
+        {
+          "constraints": {
+
+          },
+          "field_key": "photo",
+          "type": "photo",
+          "is_required": false,
+          "field_label": "photo",
+          "id": 40,
+          "position": 7
         }
       ],
       "metadata": {

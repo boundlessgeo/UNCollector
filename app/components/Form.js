@@ -46,12 +46,20 @@ class Form extends React.Component {
     );
   }
   createFeature(f) {
-    sc.createFeature$(f).first().subscribe(newFeature => {
-      setTimeout(() => {
-        this.scform.formSubmitted();
-        this.setState({ submitting: false });
-      }, 500);
-    });
+    sc.createFeature$(f).first().subscribe(
+        newFeature => {
+          setTimeout(() => {
+            this.scform.formSubmitted();
+            this.setState({ submitting: false });
+          }, 500);
+        },
+        err => {
+          setTimeout(() => {
+            this.scform.formSubmittedError();
+            this.setState({ submitting: false });
+          }, 500);
+        }
+      );
   }
   render() {
     const { form } = this.props.navigation.state.params;

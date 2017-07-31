@@ -20,7 +20,7 @@ const FormCell = props => {
       <TouchableOpacity onPress={props.onSelect}>
         <View style={styles.cellRow}>
           <Text style={styles.cellName} numberOfLines={2}>
-            {props.form.form_label}
+            {props.form.layer_label}
           </Text>
           <Icon
             name={Platform.OS === 'ios' ? 'ios-arrow-forward' : 'md-arrow-forward'}

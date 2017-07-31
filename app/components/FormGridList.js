@@ -35,10 +35,10 @@ class FormGridList extends React.Component {
             <TouchableOpacity
               onPress={() => navigate('Form', { form })}
               style={styles.listItem}
-              key={`${form.form_key}.${idx}`}
+              key={`${form.layer_key}.${idx}`}
             >
               <View>
-                <Text style={styles.listItemText}>{form.form_label}</Text>
+                <Text style={styles.listItemText}>{form.layer_label}</Text>
               </View>
             </TouchableOpacity>
           ))}

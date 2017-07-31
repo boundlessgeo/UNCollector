@@ -7,7 +7,7 @@ import scformschema from 'spatialconnect-form-schema/native';
 let self;
 class Form extends React.Component {
   static navigationOptions = ({ navigation }) => ({
-    title: navigation.state.params.form.form_label,
+    title: navigation.state.params.form.layer_label,
     headerRight: (
       <TouchableOpacity onPress={() => self.scform.onSubmit()}>
         <Text style={styles.submitBtnStyle}>Submit</Text>
@@ -35,11 +35,11 @@ class Form extends React.Component {
           },
           properties: formData,
         };
-        const f = sc.geometry('FORM_STORE', formInfo.form_key, gj);
+        const f = sc.geometry('FORM_STORE', formInfo.layer_key, gj);
         this.createFeature(f);
       },
       () => {
-        const f = sc.spatialFeature('FORM_STORE', formInfo.form_key, { properties: formData });
+        const f = sc.spatialFeature('FORM_STORE', formInfo.layer_key, { properties: formData });
         this.createFeature(f);
       },
       { enableHighAccuracy: true, timeout: 3000, maximumAge: 1000 }

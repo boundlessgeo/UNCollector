@@ -48,7 +48,7 @@ class FormList extends React.Component {
   }
 
   componentDidMount() {
-    sc.addConfigFilepath('layers.scfg');
+    sc.addConfigFilepath('exchange.scfg');
     sc.startAllServices();
     sc.forms$().subscribe(action => {
       this.setState({

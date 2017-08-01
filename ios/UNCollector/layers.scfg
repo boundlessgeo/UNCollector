@@ -1,12 +1,14 @@
 {
-"stores": [],
-"forms": [{
-"id": 92,
-"form_key": "un_risk",
-"form_label": "UN Risk",
+"layers": [
+{
+"id": "02111340-4e33-47c4-b28d-098f9e9e772d",
+"layer_key": "un_risk",
+"layer_label": "UN Risk",
 "version": 11,
 "team_id": 1,
-"fields": [{
+"schema": {
+"fields": [
+{
 "constraints": {},
 "field_key": "active",
 "type": "boolean",
@@ -231,19 +233,22 @@
 "id": 412,
 "position": 20
 }
-],
+]
+},
 "metadata": {
 "count": null,
 "lastActivity": null
 }
 },
 {
-"id": 94,
-"form_key": "un_operations",
-"form_label": "UN Operations",
+"id": "7ff2da88-8dab-43d9-86f9-2484156f115a",
+"layer_key": "un_operations",
+"layer_label": "UN Operations",
 "version": 11,
 "team_id": 1,
-"fields": [{
+"schema": {
+"fields": [
+{
 "constraints": {},
 "field_key": "active",
 "type": "boolean",
@@ -480,19 +485,22 @@
 "id": 413,
 "position": 21
 }
-],
+]
+},
 "metadata": {
 "count": null,
 "lastActivity": null
 }
 },
 {
-"id": 95,
-"form_key": "un_presence",
-"form_label": "UN Presence",
+"id": "f0930d06-d9ef-48d6-9aeb-501eb032f988",
+"layer_key": "un_presence",
+"layer_label": "UN Presence",
 "version": 11,
 "team_id": 1,
-"fields": [{
+"schema": {
+"fields": [
+{
 "constraints": {},
 "field_key": "active",
 "type": "boolean",
@@ -765,19 +773,22 @@
 "id": 416,
 "position": 24
 }
-],
+]
+},
 "metadata": {
 "count": null,
 "lastActivity": null
 }
 },
 {
-"id": 10,
-"form_key": "allfields",
-"form_label": "All-fields",
+"id": "f9d0973d-ea2d-46e9-a21d-dad67edc30cc",
+"layer_key": "allfields",
+"layer_label": "All-fields",
 "version": 7,
 "team_id": 1,
-"fields": [{
+"schema": {
+"fields": [
+{
 "constraints": {
 "pattern": ""
 },
@@ -858,9 +869,7 @@
 "position": 6
 },
 {
-"constraints": {
-
-},
+"constraints": {},
 "field_key": "photo",
 "type": "photo",
 "is_required": false,
@@ -868,7 +877,8 @@
 "id": 40,
 "position": 7
 }
-],
+]
+},
 "metadata": {
 "count": null,
 "lastActivity": null

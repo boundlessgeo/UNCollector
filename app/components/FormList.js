@@ -3,6 +3,7 @@ import {
   Dimensions,
   FlatList,
   Platform,
+  PermissionsAndroid,
   ScrollView,
   StyleSheet,
   Text,
@@ -55,6 +56,25 @@ class FormList extends React.Component {
         forms: action.payload.forms,
       });
     });
+
+    if (Platform.OS === 'android' && Platform.Version >= 23) {
+      try {
+        const granted = PermissionsAndroid.request(
+          PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+          {
+            title: 'GPS permission',
+            message: 'UNCollector needs access to your GPS',
+          }
+        );
+        if (granted) {
+          sc.enableGPS();
+        }
+      } catch (err) {
+        console.warn(err);
+      }
+    } else {
+      sc.enableGPS();
+    }
   }
 
   keyExtractor = item => item.id;

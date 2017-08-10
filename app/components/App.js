@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppState, StatusBar, View } from 'react-native';
+import { AppState, Platform, PermissionsAndroid, StatusBar, View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import * as sc from 'react-native-spatialconnect';
 import { blue, darkBlue } from '../styles';

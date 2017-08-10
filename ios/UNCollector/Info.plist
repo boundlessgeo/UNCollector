@@ -38,7 +38,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Allow Camera Usage</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>Allow GPS Usage</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Allow Photo Uploading</string>
 	<key>UIAppFonts</key>

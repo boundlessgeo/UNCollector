@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  AppState,
   Dimensions,
   FlatList,
   Platform,
@@ -45,53 +44,17 @@ class FormList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      appState: AppState.currentState,
       forms: [],
     };
   }
 
   componentDidMount() {
-    sc.addConfigFilepath('layers.scfg');
-    sc.startAllServices();
     sc.forms$().subscribe(action => {
       this.setState({
         forms: action.payload.forms,
       });
     });
-
-    AppState.addEventListener('change', this._handleAppStateChange);
   }
-
-  componentWillUnmount() {
-    AppState.removeEventListener('change', this._handleAppStateChange);
-  }
-
-  _handleAppStateChange = nextAppState => {
-    if (nextAppState === 'active') {
-      if (Platform.OS === 'android' && Platform.Version >= 23) {
-        try {
-          const granted = PermissionsAndroid.request(
-            PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-            {
-              title: 'GPS permission',
-              message: 'UNCollector needs access to your GPS',
-            }
-          );
-          if (granted) {
-            sc.enableGPS();
-          }
-        } catch (err) {
-          console.warn(err);
-        }
-      } else {
-        sc.enableGPS();
-      }
-    } else {
-      sc.disableGPS();
-    }
-
-    this.setState({ appState: nextAppState });
-  };
 
   keyExtractor = item => item.id;
 
@@ -100,9 +63,8 @@ class FormList extends React.Component {
     return (
       <FlatList
         data={this.state.forms}
-        renderItem={({ item }) => (
-          <FormCell form={item} onSelect={() => navigate('Form', { form: item })} />
-        )}
+        renderItem={({ item }) =>
+          <FormCell form={item} onSelect={() => navigate('Form', { form: item })} />}
         keyExtractor={this.keyExtractor}
         style={styles.list}
       />

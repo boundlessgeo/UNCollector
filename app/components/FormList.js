@@ -3,7 +3,6 @@ import {
   Dimensions,
   FlatList,
   Platform,
-  PermissionsAndroid,
   ScrollView,
   StyleSheet,
   Text,

@@ -1,5 +1,5 @@
 apply plugin: "com.android.application"
-
+apply plugin: 'com.google.gms.google-services'
 repositories {
   maven { url 'https://maven.fabric.io/public' }
   maven {
@@ -154,6 +154,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-fcm')
     compile project(':react-native-spatialconnect')
     compile project(':react-native-image-picker')
     compile fileTree(dir: "libs", include: ["*.jar"])

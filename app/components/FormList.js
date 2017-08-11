@@ -36,7 +36,7 @@ const FormCell = props => {
 
 class FormList extends React.Component {
   static navigationOptions = {
-    title: 'UN Collector',
+    title: 'Layers',
     headerBackTitle: null,
   };
 

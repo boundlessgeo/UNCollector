@@ -70,7 +70,7 @@ class Form extends React.Component {
         ref={scform => {
           this.scform = scform;
         }}
-        form={form}
+        form={form.schema}
         submitting={submitting}
         saveForm={this.saveForm}
       />

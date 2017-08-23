@@ -42,7 +42,7 @@ class Form extends React.Component {
         const f = sc.spatialFeature('FORM_STORE', formInfo.layer_key, { properties: formData });
         this.createFeature(f);
       },
-      { enableHighAccuracy: true, timeout: 3000, maximumAge: 60000 }
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 }
     );
   }
   createFeature(f) {

@@ -55,7 +55,7 @@ class FormList extends React.Component {
     });
   }
 
-  keyExtractor = item => item.id;
+  keyExtractor = item => item.layer_key;
 
   render() {
     const { navigate } = this.props.navigation;

@@ -30,51 +30,9 @@ const AppStack = StackNavigator(
 );
 
 class App extends React.Component {
-  state = {
-    appState: AppState.currentState,
-  };
-
   componentDidMount() {
     sc.addConfigFilepath('layers.scfg');
     sc.startAllServices();
-
-    AppState.addEventListener('change', this._handleAppStateChange);
-    this.startLocation();
-  }
-
-  componentWillUnmount() {
-    AppState.removeEventListener('change', this._handleAppStateChange);
-  }
-
-  _handleAppStateChange = nextAppState => {
-    if (this.state.appState.match(/inactive|background/) && nextAppState === 'active') {
-      this.startLocation();
-    } else if (nextAppState === 'background') {
-      sc.disableGPS();
-    }
-
-    this.setState({ appState: nextAppState });
-  };
-
-  startLocation() {
-    if (Platform.OS === 'android' && Platform.Version >= 23) {
-      try {
-        const granted = PermissionsAndroid.request(
-          PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-          {
-            title: 'GPS permission',
-            message: 'UNCollector needs access to your GPS',
-          }
-        );
-        if (granted) {
-          sc.enableGPS();
-        }
-      } catch (err) {
-        console.warn(err);
-      }
-    } else {
-      sc.enableGPS();
-    }
   }
 
   render() {

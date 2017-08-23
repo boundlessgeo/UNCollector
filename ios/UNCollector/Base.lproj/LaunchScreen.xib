@@ -15,14 +15,17 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="1aC-F6-XAS">
-                    <rect key="frame" x="40" y="23.666666666666657" width="400" height="433"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="5ps-8K-lE5">
+                    <rect key="frame" x="90" y="24" width="300" height="433"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="lgb-s1-JCx"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="1aC-F6-XAS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LvD-Zb-K5k"/>
-                <constraint firstItem="1aC-F6-XAS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="V8J-qi-GeH"/>
+                <constraint firstItem="5ps-8K-lE5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2Mb-pc-QMo"/>
+                <constraint firstItem="5ps-8K-lE5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IBr-qa-FfS"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

@@ -22,6 +22,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		4426C72E1F4E23F4002F6585 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4426C72D1F4E23F4002F6585 /* Crashlytics.framework */; };
 		54A565CF1F1E941D004F2053 /* libRNSpatialConnect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A565CE1F1E940E004F2053 /* libRNSpatialConnect.a */; };
 		54BA8B6C1EFB01C400D1B2A6 /* layers.scfg in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8B6B1EFB01C400D1B2A6 /* layers.scfg */; };
 		54BA8BE11F02F3B600D1B2A6 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8BE01F02F3B600D1B2A6 /* Ionicons.ttf */; };
@@ -250,6 +251,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = UNCollector/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		3E95DAA4266C4BA78F845B11 /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
+		4426C72D1F4E23F4002F6585 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		54A565C91F1E940E004F2053 /* RNSpatialConnect.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSpatialConnect.xcodeproj; path = "../node_modules/react-native-spatialconnect/ios/RNSpatialConnect.xcodeproj"; sourceTree = "<group>"; };
 		54BA8B6B1EFB01C400D1B2A6 /* layers.scfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = layers.scfg; path = UNCollector/layers.scfg; sourceTree = "<group>"; };
 		54BA8BE01F02F3B600D1B2A6 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
+				4426C72E1F4E23F4002F6585 /* Crashlytics.framework in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
@@ -371,6 +374,7 @@
 		13B07FAE1A68108700A75B9A /* UNCollector */ = {
 			isa = PBXGroup;
 			children = (
+				4426C7111F4E23CD002F6585 /* Frameworks */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -397,6 +401,14 @@
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4426C7111F4E23CD002F6585 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4426C72D1F4E23F4002F6585 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		54A565CA1F1E940E004F2053 /* Products */ = {
@@ -513,6 +525,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				54BA8B8D1EFB02A600D1B2A6 /* ShellScript */,
+				4426C72F1F4E7226002F6585 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -842,6 +855,19 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
 		};
+		4426C72F1F4E7226002F6585 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 93c312957d2dbf3351bffe24bea587c15ab7a893";
+		};
 		54BA8B8D1EFB02A600D1B2A6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -968,7 +994,10 @@
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 82EPDLMXNS;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-spatialconnect/ios/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../node_modules/react-native-spatialconnect/ios/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
@@ -983,7 +1012,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.boundlessgeo.mobile.collector.un;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uncollector;
 				PRODUCT_NAME = UNCollector;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -996,7 +1025,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 82EPDLMXNS;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-spatialconnect/ios/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../node_modules/react-native-spatialconnect/ios/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-image-picker/ios",
@@ -1010,7 +1042,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.boundlessgeo.mobile.collector.un;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uncollector;
 				PRODUCT_NAME = UNCollector;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

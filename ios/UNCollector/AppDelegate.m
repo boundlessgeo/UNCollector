@@ -8,7 +8,7 @@
  */
 
 #import "AppDelegate.h"
-
+#import <Crashlytics/Crashlytics.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
@@ -16,6 +16,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [Crashlytics startWithAPIKey:@"93c312957d2dbf3351bffe24bea587c15ab7a893"];
+  
   NSURL *jsCodeLocation;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];

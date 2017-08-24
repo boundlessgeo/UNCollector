@@ -1,16 +1,9 @@
-apply plugin: "com.android.application"
-apply plugin: 'io.fabric'
-
-repositories {
-  maven { url 'https://maven.fabric.io/public' }
-  maven {
-      url 'https://repo.eclipse.org/content/repositories/paho-releases/'
-  }
-  maven {
-      url 'https://repo.boundlessgeo.com/release/'
-  }
-}
 import com.android.build.OutputFile
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+
+apply plugin: "com.android.application"
+apply plugin: "io.fabric"
 
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
@@ -98,6 +91,15 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('../boundlessgeo.jks')
+            storePassword getKeystorePassword()
+            keyAlias getSigningKeyAlias()
+            keyPassword getSigningKeyPassword()
+        }
+    }
+
     compileSdkVersion 25
     buildToolsVersion '25.0.0'
 
@@ -105,65 +107,86 @@ android {
         applicationId "com.uncollector"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
-        ndk {
-            abiFilters "armeabi-v7a", "x86"
-        }
+        versionCode getBuildNumber()
+        versionName "0.1"
         multiDexEnabled true
     }
+
     splits {
         abi {
-            reset()
             enable enableSeparateBuildPerCPUArchitecture
-            universalApk false  // If true, also generate a universal APK
+            reset()
             include "armeabi-v7a", "x86"
+            universalApk false  // If true, also generate a universal APK
         }
     }
-    signingConfigs {
-      release {
-        storeFile file(SC_RELEASE_STORE_FILE)
-        storePassword SC_RELEASE_STORE_PASSWORD
-        keyAlias SC_RELEASE_KEY_ALIAS
-        keyPassword SC_RELEASE_KEY_PASSWORD
-      }
-    }
+
     buildTypes {
+        debug {
+            versionNameSuffix "+1-DEBUG"
+            applicationIdSuffix ".debug"
+        }
+
+        beta {
+            versionNameSuffix "+1-BETA"
+            applicationIdSuffix ".beta"
+
+            signingConfig signingConfigs.release
+        }
+
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+
             signingConfig signingConfigs.release
         }
     }
-    // applicationVariants are e.g. debug, release
+
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
-            // For each separate APK per architecture, set a unique version code as described here:
-            // http://tools.android.com/tech-docs/new-build-system/user-guide/apk-splits
+            def file = output.outputFile
+
             def versionCodes = ["armeabi-v7a":1, "x86":2]
             def abi = output.getFilter(OutputFile.ABI)
-            if (abi != null) {  // null for the universal-debug, universal-release variants
-                output.versionCodeOverride =
-                        versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
+
+            def newFileName = "UNCollector-" + defaultConfig.versionCode
+
+            if ( variant.buildType.name == "beta" ) {
+                newFileName += "_" + getDateTime()
             }
+
+            if ( abi != null ) {
+                newFileName += "_" + abi
+            }
+
+            newFileName += ".apk"
+
+            output.outputFile = new File(file.parent, newFileName)
         }
     }
+
     packagingOptions {
-      exclude 'META-INF/LICENSE'
-      exclude 'META-INF/NOTICE'
-      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.xml'
-      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.properties'
-      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.xml'
-      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.properties'
-      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.xml'
-      pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.properties'
-      pickFirst 'META-INF/maven/commons-io/commons-io/pom.xml'
-      pickFirst 'META-INF/maven/commons-io/commons-io/pom.properties'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.xml'
+        pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-core/pom.properties'
+        pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.xml'
+        pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-databind/pom.properties'
+        pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.xml'
+        pickFirst 'META-INF/maven/com.fasterxml.jackson.core/jackson-annotations/pom.properties'
+        pickFirst 'META-INF/maven/commons-io/commons-io/pom.xml'
+        pickFirst 'META-INF/maven/commons-io/commons-io/pom.properties'
     }
 
     dexOptions {
         javaMaxHeapSize "4g"
     }
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://repo.eclipse.org/content/repositories/paho-releases/' }
+    maven { url 'https://repo.boundlessgeo.com/release/' }
 }
 
 dependencies {
@@ -174,6 +197,55 @@ dependencies {
     compile "com.facebook.react:react-native:+"  // From node_modules
     compile('com.crashlytics.sdk.android:crashlytics:2.6.1@aar') {
       transitive = true;
+    }
+}
+
+static def getDateTime() {
+    DateFormat df = new SimpleDateFormat('yyyy-MM-dd_kk-mm-ss');
+
+    return df.format(new Date());
+}
+
+static def getBuildNumber() {
+    return "git log --pretty=format:''".execute().text.readLines().size()
+}
+
+def getKeystorePassword() {
+    def localProperties = project.file('../local.properties')
+    if (localProperties.exists()) {
+        Properties properties = new Properties()
+        localProperties.withInputStream { instr ->
+            properties.load(instr)
+        }
+        return properties.getProperty('key.store.password')
+    } else {
+        return System.console().readLine("\nKeystore Password: ")
+    }
+}
+
+def getSigningKeyAlias() {
+    def localProperties = project.file('../local.properties')
+    if (localProperties.exists()) {
+        Properties properties = new Properties()
+        localProperties.withInputStream { instr ->
+            properties.load(instr)
+        }
+        return properties.getProperty('key.alias')
+    } else {
+        return System.console().readLine("\nSigning Key Alias: ")
+    }
+}
+
+def getSigningKeyPassword() {
+    def localProperties = project.file('../local.properties')
+    if (localProperties.exists()) {
+        Properties properties = new Properties()
+        localProperties.withInputStream { instr ->
+            properties.load(instr)
+        }
+        return properties.getProperty('key.alias.password')
+    } else {
+        return System.console().readLine("\nSigning Key Password: ")
     }
 }
 

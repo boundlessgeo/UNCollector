@@ -149,7 +149,7 @@ android {
             def versionCodes = ["armeabi-v7a":1, "x86":2]
             def abi = output.getFilter(OutputFile.ABI)
 
-            def newFileName = "UNCollector-" + defaultConfig.versionCode
+            def newFileName = "UNCollector-" + variant.buildType.name + "-" + defaultConfig.versionCode
 
             if ( variant.buildType.name == "beta" ) {
                 newFileName += "_" + getDateTime()

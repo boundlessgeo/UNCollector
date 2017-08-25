@@ -114,10 +114,13 @@ android {
 
     splits {
         abi {
+            // if this is false, the rest of these flags don't do anything
             enable enableSeparateBuildPerCPUArchitecture
             reset()
+            // which abis to generate an apk for
             include "armeabi-v7a", "x86"
-            universalApk false  // If true, also generate a universal APK
+            // If true, also generate a universal APK
+            universalApk false
         }
     }
 

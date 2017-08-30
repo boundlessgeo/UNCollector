@@ -115,7 +115,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 22
         versionCode getBuildNumber()
-        versionName "0.1"
+        versionName "0.1.0"
         multiDexEnabled true
         ndk {
             // include these abi configurations of our libs in the apk
